@@ -16,6 +16,7 @@ const InputStateOutside: React.FC<InputProps> = ({
   return (
     <>
       <input
+        className=""
         name={name}
         value={value}
         onChange={onChange}
