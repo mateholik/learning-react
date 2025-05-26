@@ -2,7 +2,7 @@
 
 import { useForm, type FieldValues } from "react-hook-form";
 
-const ForkWithReactHookForm = () => {
+const SimpleReactHookForm = () => {
   const {
     register,
     handleSubmit,
@@ -86,4 +86,4 @@ const ForkWithReactHookForm = () => {
   );
 };
 
-export default ForkWithReactHookForm;
+export default SimpleReactHookForm;
