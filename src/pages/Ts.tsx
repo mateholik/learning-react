@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from "../components/typescript-in-react/Button";
 import Button2 from "../components/typescript-in-react/Button2";
 import Button3 from "../components/typescript-in-react/Button3";
+import User from "../components/typescript-in-react/User";
 
 const Ts = () => {
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -37,7 +38,10 @@ const Ts = () => {
         Paspausk mane
       </Button2>
 
-      <Button3 onClick={setCount}>{count}</Button3>
+      <Button3 type="submit" updateCount={setCount}>
+        {count}
+      </Button3>
+      <User />
     </div>
   );
 };

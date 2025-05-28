@@ -2,12 +2,12 @@ import React from "react";
 
 type ButtonProps = {
   children: number;
-  onClick: React.Dispatch<React.SetStateAction<number>>;
-};
+  updateCount: React.Dispatch<React.SetStateAction<number>>;
+} & React.ComponentPropsWithoutRef<"button">;
 
-const Button = ({ children, onClick }: ButtonProps) => {
+const Button = ({ children, updateCount, ...rest }: ButtonProps) => {
   return (
-    <button type="submit" onClick={() => onClick((prev) => prev + 1)}>
+    <button {...rest} onClick={() => updateCount((prev) => prev + 1)}>
       count: {children}
     </button>
   );
