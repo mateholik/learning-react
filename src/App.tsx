@@ -9,7 +9,7 @@ function App() {
     <>
       <div className="container mx-auto">
         <BrowserRouter>
-          <nav className="flex space-x-4 p-4 bg-amber-200">
+          <nav className="flex space-x-4 p-4 bg-amber-200 mb-8">
             <Link to="/">Home</Link>
             <Link to="/forms">forms</Link>
             <Link to="/ts">ts</Link>

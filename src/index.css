@@ -3,6 +3,9 @@
 input {
   @apply block border-black border-2 w-full px-4 py-2 rounded;
 }
+button {
+  @apply block;
+}
 button[type="submit"] {
   @apply block bg-green-600 w-full px-4 py-2 rounded text-white uppercase cursor-pointer;
 }
