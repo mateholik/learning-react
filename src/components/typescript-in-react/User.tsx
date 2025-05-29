@@ -4,6 +4,10 @@ type User = {
   name: string;
   id: number;
 };
+
+type Guest = Omit<User, "name">;
+
+const sharedValues = ["smart", "lazy", "openminded"] as const;
 const User = () => {
   const [user, setUser] = useState<User | null>(null);
 
@@ -13,7 +17,14 @@ const User = () => {
 
   const divRef = useRef<HTMLDivElement>(null);
 
-  return <div ref={divRef}>{user?.name}</div>;
+  return (
+    <div>
+      <div ref={divRef}>USER {user?.name}:</div>
+      {sharedValues.map((option) => (
+        <div key={option}>{option}</div>
+      ))}
+    </div>
+  );
 };
 
 export default User;

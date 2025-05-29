@@ -1,4 +1,4 @@
-import ComplexReactHookForm from "../components/ComplexReactHookForm";
+import ComplexReactHookForm from "../components/forms/ComplexReactHookForm";
 
 const Forms = () => {
   return (

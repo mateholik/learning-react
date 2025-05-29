@@ -3,6 +3,7 @@ import Button from "../components/typescript-in-react/Button";
 import Button2 from "../components/typescript-in-react/Button2";
 import Button3 from "../components/typescript-in-react/Button3";
 import User from "../components/typescript-in-react/User";
+import Button4 from "../components/typescript-in-react/Generics";
 
 const Ts = () => {
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -42,6 +43,7 @@ const Ts = () => {
         {count}
       </Button3>
       <User />
+      <Button4 count="red" countHistory={[6, 5]} />
     </div>
   );
 };
